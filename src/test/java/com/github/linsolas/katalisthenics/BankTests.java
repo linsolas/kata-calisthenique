@@ -66,7 +66,7 @@ public class BankTests {
     public void should_print() {
         account.withdraw(40);
         account.deposit(400);
-        account.printOperations();
+        account.printOperations(System.out);
     }
 
 

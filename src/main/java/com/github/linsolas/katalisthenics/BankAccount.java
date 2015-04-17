@@ -1,5 +1,7 @@
 package com.github.linsolas.katalisthenics;
 
+import java.io.PrintStream;
+
 public class BankAccount {
 
     public Owner owner;
@@ -42,9 +44,11 @@ public class BankAccount {
         account.deposit(money);
     }
 
-    public void printOperations() {
+    public void printOperations(PrintStream stream) {
+        Amount balance = new Amount();
         for (Operation operation : operations) {
-            operation.printOperation();
+            operation.evaluateBalance(balance);
+            operation.printOperation(stream, balance);
         }
     }
 

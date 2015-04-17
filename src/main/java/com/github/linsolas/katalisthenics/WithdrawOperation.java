@@ -1,5 +1,7 @@
 package com.github.linsolas.katalisthenics;
 
+import java.io.PrintStream;
+
 public class WithdrawOperation extends Operation {
 
     public final Amount amount;
@@ -15,8 +17,8 @@ public class WithdrawOperation extends Operation {
     }
 
     @Override
-    public void printOperation() {
-        super.printOperation();
-        System.out.println("Withdraw of " + amount + "EUR");
+    public void printOperation(PrintStream stream, Amount balance) {
+        super.printOperation(stream, balance);
+        stream.println("Withdraw of " + amount + "EUR -> " + balance + "EUR");
     }
 }
