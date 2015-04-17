@@ -18,14 +18,14 @@ Le but ici n'est pas tant de faire un vrai gestionnaire de compte bancaire, mais
 
 Le code doit respecter, **à tout moment**, l'**ensemble de ces règles** :
 
-* un seul niveau d’indentation par méthode (pas de `if` imbriqués par exemple) ;
-* pas de `else` ;
-* encapsuler tous les types primitifs et `String` ;
-* un seul point par ligne ;
-* pas d’abréviation (pour les noms des variables ou de méthodes) ;
-* limiter la taille des entités (petites classes) ;
-* pas plus de deux variables d’instance par classe ;
-* utiliser des collections *first class*, c’est-à-dire de ne pas utiliser par exemple des `List<String> usernames` mais plutôt une classe plus explicite, comme par exemple `Usernames`.
-* pas de getter / setter / properties
+1. un seul niveau d’indentation par méthode (pas de `if` imbriqués par exemple) ;
+2. pas de `else` ;
+3. encapsuler tous les types primitifs et `String` ;
+4. un seul point par ligne ;
+5. pas d’abréviation (pour les noms des variables ou de méthodes) ;
+6. limiter la taille des entités (petites classes) ;
+7. pas plus de deux variables d’instance par classe ;
+8. utiliser des collections *first class*, c’est-à-dire de ne pas utiliser par exemple des `List<String> usernames` mais plutôt une classe plus explicite, comme par exemple `Usernames`.
+9. pas de getter / setter / properties
 
 Bonus si le code de test respecte aussi ces règles !
